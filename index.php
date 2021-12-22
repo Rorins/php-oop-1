@@ -14,7 +14,7 @@ class Movie{
     }
 //METODI
     public function printer($movie){
-    echo $movie->name."-".$movie->genre;
+    echo $movie->name."-".$movie->genre."</br>";
     }
 }
 
@@ -24,6 +24,6 @@ class Movie{
 $movie1 = new Movie('spiderman','action');
 $movie2 = new Movie('parasyte','thriller');
 
-$movie1 -> printer($movie1).'</br>';
+$movie1 -> printer($movie1);
 $movie2 -> printer($movie2);
 ?>
