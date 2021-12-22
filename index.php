@@ -13,15 +13,17 @@ class Movie{
         $this->genre = $genre;
     }
 //METODI
+    public function printer($movie){
+    echo $movie->name."-".$movie->genre;
+    }
 }
 
 //ISTANZA/OGGETTO
 //L'ALTERNATIVA SAREBBE STATA $element->$name = 'spiderMan' ma usiamo un costruttore
 //dove con una funzione(COSTRUTTORE)inseriamo name e genre come suoi parametri
-
 $movie1 = new Movie('spiderman','action');
-echo $movie1->name;
-
 $movie2 = new Movie('parasyte','thriller');
-echo $movie2->name;
+
+$movie1 -> printer($movie1).'</br>';
+$movie2 -> printer($movie2);
 ?>
